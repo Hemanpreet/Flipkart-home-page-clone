@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+    --main-bg-color:rgb(21, 13, 138);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    
+    background-color:var(--main-bg-color);
+    border:2px solid red;
+
+}
+nav{
+    display: flex;
+}
+.logo{
+    display:flex;
+    align-items: center;
+}
+/* logo ke andar jo img hai */
+.logo img{
+     width:88px;
+     padding:0 25px;
+}
+nav ul{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    height:58px;
+}
+/* nav ke andar ke ul ke andar li */
+nav ul li{
+    list-style: none;
+    padding:0 23px;
+}
+nav ul li a{ 
+    color:white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+
+}
+nav ul li a:hover{
+    font-weight: bolder;
+}
+
+.search{
+    display:flex;
+    align-items: center;
+} 
+/* .search ke andar jo input hai */
+.search input{
+    width:30vw;
+    height:27px;
+    border-radius:5px ;
+    margin:0 16px 0 56px;
+    padding:0 12px;
+}
+.container{
+    /* min-height of container=min(100vh-height of header mein jo ul hai-height of footer so total height->>100vh so total poora viewport gher legi) */
+    min-height:calc(100vh - 58px - 12vh);
+}
+/* search ke andar jo  button hai*/
+.search button{
+    font-family: 'Lato', sans-serif;
+    font-weight:bolder;
+}
+.slider{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:12px;
+    overflow:hidden;
+}
+.card{
+    max-width:91vw;
+    margin:37px auto;
+    font-family: 'Lato', sans-serif;
+}
+.cards{
+    display:flex;
+    justify-content: center;
+    background-color: rgba(241, 177, 243, 0.74);
+    overflow:scroll;
+}
+
+ .card-item{
+     
+    display:inline-flex;
+    /* as we did display:inline-flex now we can change the width */
+    width:10vw;
+    justify-content: center;
+    flex-direction: column;
+    margin:0 25px;
+} 
+
+/* .card ke andar jo h2 hai usme yeh font add hoga */
+.card h2{
+    font-family: 'Lato', sans-serif;
+}
+footer{
+    height:12vh;
+    background-color:var(--main-bg-color);
+    color:white;
+    font-family: 'Lato', sans-serif;
+
+}
